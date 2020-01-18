@@ -1,6 +1,6 @@
 class TicTacToe
   def initialize
-    @board = Array.new(9, " ")#[" ", " ", " ", " ", " ", " ", " ", " ", " "]
+    @board = Array.new(9, " ") #[" ", " ", " ", " ", " ", " ", " ", " ", " "]
   end
 
   WIN_COMBINATIONS = [
@@ -68,7 +68,7 @@ class TicTacToe
   end
 
   def full?
-    self.all?{|spot| spot != " " }
+    @board.all?{|spot| spot != " " }
   end
 
   def draw?
